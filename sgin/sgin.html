@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>sgin in</title>
+   <link rel="stylesheet" href="css/style_sgin.css">
+</head>
+<body dir="rtl">
+
+   <div class="creat-acount up active">
+
+   <center>
+      <form action="">
+         
+         <div class="user-name">
+            <label for=""> أسم المستخدم </label>
+            <input type="text" name="username" id="username" placeholder="أدخل ألأسم " required>
+         </div>
+                  
+         <div class="email">
+            <label for=""> ألبريد ألألكتروني </label>
+            <input type="email" name="useremail" id="useremail" placeholder="أدخل البريد  " required>
+         </div>
+
+         <div class="password">
+            <label for=""> كلمة السر</label>
+            <input type="password" name="userpassword" id="userpassword" placeholder="أدخل كلمة السر  " required>
+         </div>
+         
+         <div class="conferm-password">
+            <label for=""> تأكيد كلمة السر </label>
+            <input type="password" name="confermpassword" id="confermpassword" placeholder="أعد كتابة كلمة السر " required>
+         </div>
+
+         <button type="submit"> تسجيل الدخول </button>
+
+         <h2> أملك حساب من قبل  <a href="#" onclick="enter('in')"> تسجيل الدخول </a></h2> 
+      
+      </form>
+   </center>
+
+   </div> 
+
+
+   <div class="creat-acount in " > 
+
+      <center>
+         <form action="" >
+
+            <div class="email">
+               <label for=""> ألبريد ألألكتروني </label>
+               <input type="email" name="useremail" id="useremail" placeholder="أدخل البريد  " required>
+            </div>
+   
+            <div class="password">
+               <label for=""> كلمة السر</label>
+               <input type="password" name="userpassword" id="userpassword" placeholder="أدخل كلمة السر  " required>
+            </div>
+            
+   
+            <button type="submit" > تسجيل الدخول </button>
+   
+            <h2> لا أملك حساب <a href="#" onclick="enter('up')"> إنشاء حساب </a></h2> 
+         
+         </form>
+      </center>
+
+   </div>
+
+
+   <script src="js/script_sgin.js"></script>
+</body>
+</html>

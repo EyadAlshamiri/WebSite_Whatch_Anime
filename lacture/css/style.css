@@ -1,0 +1,358 @@
+*{
+   margin: 0; 
+   padding: 0; 
+   box-sizing: border-box;
+}
+
+:root{
+   --main-color :red ;
+   --color-1 : #202020 ; 
+   --color-2 : #a7a7a7 ; 
+   --color-3 : #007ffd ;
+   --color-4 : #ffffff ;
+   --color-5 : #c1e8ff ;
+   --text-color : white  ; 
+}
+
+body {
+
+   background-color: var(--color-1);
+}
+
+section {
+   background-color: var(--color-1);
+   width: 100%; 
+   height: 100%;
+}
+
+.main { 
+   display: none ;
+   position: relative ;
+   width: 100% ;
+   height: 100vh;
+   justify-content: space-between ;
+   padding: 50px;
+   visibility: hidden; 
+   transform: scale(0);
+   transition: 0.5s;
+   
+}
+
+.main.active {
+   display: flex;
+   visibility: visible; 
+   transform: scale(1);
+   transition: 0.5s;
+}
+
+
+.img-name,
+.about , 
+.button {
+   width: 390px ;
+   background: rgba(0, 0, 0, 0.2);
+   box-shadow: 10px 10px 50px rgba(80, 72, 72, 0.5);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+   backdrop-filter: blur(20px);
+   border-radius: 10px; 
+   padding: 20px ; 
+}
+
+.img img{
+   margin-right: 22px;
+   width: 300px;
+   border: 3px solid whitesmoke;
+   border-radius: 8px;
+   box-shadow: 2px 2px 8px black;
+}
+
+.img-name h1 {
+   padding :10px 10px ;
+   color: var(--text-color);
+   font-size: 20px;
+}
+
+.img-name h1 span {
+   color: var(--text-color);
+}
+
+.trailer {
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+   background-color: var(--color-2);
+   border-radius: 5px; 
+   box-shadow: 0px 3px 5px black;
+   padding: 10px ;
+}
+
+.trailer video {
+   width: 150px ;
+   height: 60px;
+   border-radius: 5px ;
+}
+
+.img-name a {
+   text-decoration: none ;
+}
+
+.img-name a span {
+   color: var(--text-color) ;
+   font-size: 15px; 
+}
+
+.summary{
+   border-bottom: 2px solid var(--color-5);
+}
+
+.about .summary span {
+   color: var(--main-color) ; 
+   font-size: 20px;
+}
+
+.about .summary p {
+   color: var(--text-color); 
+   padding-bottom: 10px;
+} 
+
+.information {
+   padding: 20px ;
+}
+
+.information .category {
+   display: flex; 
+   align-items: center;
+   padding: 20px 10px; 
+   justify-content: space-between ;
+}
+
+.information .category span {
+   background-color: var(--color-5); 
+   border-radius: 3px ;
+   padding: 5px 10px ; 
+}
+
+.information .info {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   color: var(--text-color); 
+}
+
+.Evaluation { 
+   background-color: red; 
+   border-radius: 3px; 
+   padding: 2px;
+   color: var(--text-color);
+}
+
+.information .info:nth-child(3) , 
+.information .info:nth-child(4) {
+   display: block;
+}
+
+.information .info:nth-child(3) div {
+   display: flex ;
+   justify-content: space-between;
+   align-items: center;
+   padding-bottom: 10px ;
+}
+
+.information .info:nth-child(4) div {
+   padding-bottom: 10px;
+}
+
+.button {
+   padding: 100px 10px;
+}
+
+.button-box {
+   padding:50px  20px ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.button-box a {
+   position: relative;
+   text-decoration: none; 
+   background-color: var(--main-color);
+   border-radius: 3px; 
+   padding: 10px 30px ;
+   border: 1px solid rgba(255, 255 255, 0.5);
+   box-shadow: 0px 2px 5px black;
+   color: var(--text-color);
+   overflow: hidden;
+   transition: 0.5s ease;
+   z-index: 1;
+}
+
+.button-box a::before {
+   content: ""; 
+   position: absolute; 
+   width: 0%; 
+   height: 100%;
+   top: 0;
+   left: 0;
+   background-color: white;
+   z-index: -1; 
+   transition: 0.5s ease; 
+}
+
+.button-box a:hover {
+   color: black;
+}
+
+.button-box a:hover:before {
+   width: 100%;
+}
+
+
+
+#Evaluation  {
+   color: gold;
+}
+
+
+.comment {
+   position: fixed; 
+   top: 50%; 
+   left: 50%; 
+   transform: translate(-50% , -50%) ; 
+   z-index: 100; 
+   width: 25%; 
+   height: 50%; 
+   display: flex; 
+   justify-content: center; 
+   align-items: center; 
+   backdrop-filter: blur(20px);
+   visibility: hidden; 
+   opacity: 0; 
+   transition: 0.5s; 
+}
+
+.comment.active {
+   visibility: visible; 
+   opacity: 1;
+}
+
+.comment div {
+   max-width: 900px ;
+   outline: none; 
+}
+
+.comment a {
+   position: absolute; 
+   top: 20px; 
+   right: 30px; 
+   text-decoration: none; 
+   cursor: pointer; 
+   filter: invert(1);
+   font-size: 20px; 
+}
+
+
+
+@media (max-width: 1200px) {
+   html {
+      font-size: 14.5px;
+   }
+}
+
+@media (max-width: 991px) {
+
+   body {
+      height: 1250px;
+   }
+
+   section {
+      height: 1000px;
+   }
+
+   .main {
+      flex-wrap: wrap ;
+      visibility: hidden; 
+      transform: scale(0);
+      transition: 0.5s;
+   }
+
+   .main.active {
+      display: flex;
+      visibility: visible; 
+      transform: scale(1);
+      transition: 0.5s;
+   }
+
+   .button {
+      margin-top: 20px;
+      padding: 20px;
+      width: 100%;
+      height: 150px;
+      display: flex; 
+      position: relative; 
+      justify-content: space-between;
+   }
+
+   .button-box {
+      font-size: 14px;
+      padding: 0px;
+      margin: 0px;
+   }
+
+   .button-box a {
+      margin-right: 10px ;
+   }
+}
+
+@media (max-width: 768px) {
+   
+
+}
+
+@media (max-width: 520px) {
+   html {
+      font-size: 10px; 
+   }
+
+   .main {
+      padding: 20px 10px ; 
+   }
+
+   .button, .img-name , .about {
+      width: 100%; 
+      height:  80%;
+      margin: 10px  ;
+      padding:10px 5px;
+   }
+
+   .about {
+      height: 90%;
+   }
+
+   .img-name  img{
+      width: 200px;
+   }
+
+
+   .img-name .trailer{
+      width: 80%;
+   }
+
+   .img-name .trailer video {
+      width: 130px ;
+      height: 40px;
+   }
+
+   .button {
+      margin-top: 0px;
+      height: 40%;
+      padding: 20px ; 
+      display: block; 
+   }
+
+   .button-box a {
+      margin-bottom: 20px ;
+      font-size: 12px;
+   }
+}
+

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title> Episodes</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel = 'stylesheet' > 
+   
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="../css/style_AR.css">
+</head>  
+<body dir="rtl">
+   <header>
+      <a href="#" class="logo">ANIME</a>
+      <div class="bx bx-menu" id="menu-icon" > <span class="animate" style="--i:2;"></span> </div>
+      <ul class="nav">
+         <li>
+            <a href="../index_movie.html " class="active" ><i class="fa fa-home" aria-hidden="true"></i></a>
+         </li>
+         <li><a href="../My_List/index_list.html">ألقائمة</a></li>
+         <li><a href="../sgin/sgin.html">تسجيل الدخول</a></li>
+         <li><a href="../index_movie.html"> ألانجليزية</a></li>
+         <span class="active-nav"></span>
+      </ul>
+      <div class="search">
+         <input type="text" placeholder="Search">
+         <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+   </header>
+
+   <section class="content">
+
+      <div class="content-item">
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 1 </h3>
+            <a href="#" onclick="toggleVideo('Boku.mp4')"> مشاهدة </a>
+            <a href="../video/Boku.mp4" download="1.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 2 </h3>
+            <a href="#" onclick="toggleVideo('Ninja.mp4')"> مشاهدة </a>
+            <a href="../video/Ninja.mp4" download="2.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 3 </h3>
+            <a href="#" onclick="toggleVideo('DoctorElise.mp4')"> مشاهدة </a>
+            <a href="../video/DoctorElise.mp4" download="3.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 4 </h3>
+            <a href="#" onclick="toggleVideo('Level.mp4')"> مشاهدة </a>
+            <a href="../video/Level.mp4" download="4.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 5 </h3>
+            <a href="#" onclick="toggleVideo('Loop.mp4')"> مشاهدة </a>
+            <a href="../video/Loop.mp4" download="5.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 6 </h3>
+            <a href="#" onclick="toggleVideo('Lv2.mp4')"> مشاهدة </a>
+            <a href="../video/Lv2.mp4" download="6.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 7 </h3>
+            <a href="#" onclick="toggleVideo('MASHILE.mp4')"> مشاهدة </a>
+            <a href="../video/MASHLE.mp4" download="7.mp4"> تحميل</a>
+         </div>
+   
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 8 </h3>
+            <a href="#" onclick="toggleVideo('Otonari.mp4')"> مشاهدة </a>
+            <a href="../video/Otonari.mp4" download="8.mp4"> تحميل</a>
+         </div>
+
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 9 </h3>
+            <a href="#" onclick="toggleVideo('Solo.mp4')"> مشاهدة </a>
+            <a href="../video/Solo.mp4" download="9.mp4"> تحميل</a>
+         </div>
+
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 10 </h3>
+            <a href="#" onclick="toggleVideo('The.mp4')"> مشاهدة </a>
+            <a href="../video/The.mp4" download="10.mp4"> تحميل</a>
+         </div>
+
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة 11 </h3>
+            <a href="#" onclick="toggleVideo('Boku.mp4')"> مشاهدة </a>
+            <a href="../video/Boku.mp4" download="11.mp4"> تحميل</a>
+         </div>
+
+         <div class="episode" >
+            <img src="../img/bg/Akuyaku_bg.jpg" alt="">
+            <h3> الحلقة12 الاخيرة </h3>
+            <a href="#" onclick="toggleVideo('Ninja.mp4')"> مشاهدة </a>
+            <a href="../video/Ninja.mp4" download="12_end.mp4"> تحميل</a>
+         </div>
+
+      </div>
+
+
+   
+   <div class="trailer" id="vid">
+      <video src="../video/Level.mp4" 
+         muted
+         controls="true" 
+         autoplay="true"
+      >
+   </video>
+      <a href="" onclick="toggleVideo()">X</a>
+   </div>
+
+
+   <script src="js/script_Episodes.js"></script>
+
+   </section>
+</body>
+</html>

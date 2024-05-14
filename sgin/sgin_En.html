@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>sgin in</title>
+   <link rel="stylesheet" href="css/style_sgin.css">
+</head>
+<body >
+
+   <div class="creat-acount up active">
+
+   <center>
+      <form action="">
+         
+         <div class="user-name">
+            <label for=""> User Name </label>
+            <input type="text" name="username" id="username" placeholder="Enter your Name " required>
+         </div>
+                  
+         <div class="email">
+            <label for="">Email </label>
+            <input type="email" name="useremail" id="useremail" placeholder="Enter your Email" required>
+         </div>
+
+         <div class="password">
+            <label for="">Password </label>
+            <input type="password" name="userpassword" id="userpassword" placeholder="Enter your Password " required>
+         </div>
+         
+         <div class="conferm-password">
+            <label for=""> Conferm Password</label>
+            <input type="password" name="confermpassword" id="confermpassword" placeholder="Retype password" required>
+         </div>
+
+         <button type="submit">Sgin up </button>
+
+         <h2> I have an account <a href="#" onclick="enter('in')"> Sgin in</a></h2> 
+      
+      </form>
+   </center>
+
+   </div> 
+
+
+   <div class="creat-acount in " > 
+
+      <center>
+         <form action="" >
+
+            <div class="email">
+               <label for=""> Email</label>
+               <input type="email" name="useremail" id="useremail" placeholder="Enter your Email" required>
+            </div>
+   
+            <div class="password">
+               <label for="">Password</label>
+               <input type="password" name="userpassword" id="userpassword" placeholder="Enter your password" required>
+            </div>
+            
+   
+            <button type="submit" > تسجيل الدخول </button>
+   
+            <h2>I dont have an account <a href="#" onclick="enter('up')">Sgin up</a></h2> 
+         
+         </form>
+      </center>
+
+   </div>
+
+
+   <script src="js/script_sgin.js"></script>
+</body>
+</html>

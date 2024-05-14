@@ -1,0 +1,33 @@
+
+
+@media (max-width: 768px) {
+
+   .nav {
+      position: absolute;
+      right: -100% ; 
+   }
+
+   .nav.active {
+      right: 0;
+   }
+
+   
+   .nav .active-nav {
+      right: -100%; 
+   }
+
+   .nav.active .active-nav {
+      right: 0;
+   }
+
+}
+
+@media (max-width: 520px) {
+   .search {
+   transform:translateX(10px);
+   }
+   
+   .play {
+      transform: translateY(-220px) translateX(30px);
+   }
+}
